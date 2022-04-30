@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+.App{
+    background: #f6f6f6;
+    color: #0d1d2c;
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+    height: 100vh ;
+    width: 100% ;
+    padding-top: 30px ;
+    font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode',Geneva,Verdana, sans-serif ;
+}
+.top-section{
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+    margin-bottom: 20px;
+}
+.container {
+    display: flex ;
+    flex-direction: column ;
+    width: 300px ;
+    background: #fff ;
+    padding: 10px ;
+    border-radius: 5px ;
+    border: 1px solid #ccc ;
+}
+.result {
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+}
+.expense-box , .income-box {
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+    justify-content: center ;
+    width : 135px ;
+    border : 1px solid #ccc ;
+    border-radius: 5px ;
+    height: 50px ;
+    padding: 10px;
+}
+.expense-box span {
+    color : red ;
+} 
+.income-box span {
+    color : green ;
+}
+:is( .expense-box , .income-box ) span {
+    font-weight: bold ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+    outline: none ;
+    padding: 5px 10px ;
+    background-color: #EDE9FE;
+    color : #6d28d9 ;
+    border: 1px solid #6d28d9 ;
+    border-radius: 5px ;
+    cursor: pointer ;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.primary {
+    color : #fff ;
+    background: #6d28d9; 
+    padding: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cancel {
+    background: #fff ;
+    color : #dc2626 ;
+    border : 1px solid #dc2626 ;
 }
-
-.App-link {
-  color: #61dafb;
+form {
+    display: flex ;
+    flex-direction: column ;
+    justify-content: space-between ;
+    min-height: 170px ;
+    margin-bottom: 20px ;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input{
+    border: 1px solid #ccc ;
+    outline: none ;
+    padding: 10px 12px ;
+    border-radius: 5px ;
+}
+input[type="radio"] {
+    margin-left: 15px;
+}
+.radio-box {
+    display: flex ;
+    align-items: center ;
+    justify-content: flex-start ;
+    font-size: 14px ;
+}
+.radio-box label {
+    margin-left: 5px;
+    cursor: pointer;
+}
+.transaction {
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+    border-radius: 5px ;
+    background-color: #f4f4f5;
+    padding: 5px 15px ;
+    margin-top: 15px;
+    font-weight: bold ;
+    border-right: 4px solid green ;
+    width: 100% ;
+}
+input.search {
+    width: 100% ;
+    background-color: rgb(213, 213, 213);
+}
+section.trx{
+    display: flex ;
+    flex-direction: column ;
+    justify-content: center  ;
+    align-items: center ;
+    width: 100% ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.trx p {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
